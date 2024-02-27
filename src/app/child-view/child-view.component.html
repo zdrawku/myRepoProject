@@ -1,0 +1,119 @@
+<igx-navbar class="navbar">
+  <igx-navbar-action>
+    <button igxButton="icon" igxRipple>
+      <igx-icon>
+        arrow_back
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+</igx-navbar>
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <h5 class="h5">
+      Supplier Details
+    </h5>
+    <h5 class="h5_1">
+      ProductID:
+    </h5>
+    <igx-avatar size="large" shape="circle" class="avatar">
+      <igx-icon>
+        people
+      </igx-icon>
+    </igx-avatar>
+    <h5 class="h5_1">
+      {{ productID }}
+    </h5>
+    <igx-expansion-panel class="expansion-panel">
+      <igx-expansion-panel-body>
+        <div class="column-layout group_2">
+          <igx-card type="outlined" *ngFor="let item of initProductsBasedOnSupplier" class="card">
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                {{ item.productId }}
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                {{ item.supplierId }}
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="row-layout group_2">
+                <h6 class="h6">
+                  Quantity: 
+                </h6>
+                <h6 class="h6">
+                  {{ item.quantityPerUnit }}
+                </h6>
+              </div>
+              <div class="row-layout group_2">
+                <h6 class="h6">
+                  Unit price:
+                </h6>
+                <h6 class="h6">
+                  {{ item.unitPrice }}
+                </h6>
+              </div>
+              <div class="row-layout group_2">
+                <h6 class="h6">
+                  Units in Stock:
+                </h6>
+                <h6 class="h6">
+                  {{ item.unitsInStock }}
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxEnd>
+                <button igxButton="icon" igxRipple>
+                  <igx-icon>
+                    favorite
+                  </igx-icon>
+                </button>
+                <button igxButton="icon" igxRipple>
+                  <igx-icon>
+                    bookmark
+                  </igx-icon>
+                </button>
+                <button igxButton="icon" igxRipple>
+                  <igx-icon>
+                    share
+                  </igx-icon>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Show supplier products</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+  </div>
+  <div class="column-layout group_3">
+    <igx-input-group type="border" class="input">
+      <input type="text" [value]="initSupplierBasedOnProductID?.supplierId" igxInput />
+      <label igxLabel>Supplier ID</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [value]="initSupplierBasedOnProductID?.companyName" igxInput />
+      <label igxLabel>Company Name</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [value]="initSupplierBasedOnProductID?.contactName" igxInput />
+      <label igxLabel>Contact Name</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [value]="initSupplierBasedOnProductID?.contactTitle" igxInput />
+      <label igxLabel>Contract Name</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [value]="initSupplierBasedOnProductID?.address" igxInput />
+      <label igxLabel>Address</label>
+    </igx-input-group>
+    <div class="row-layout group_4"></div>
+    <div class="row-layout group_5"></div>
+    <div class="row-layout group_5"></div>
+    <div class="row-layout group_5"></div>
+    <div class="row-layout group_5"></div>
+    <div class="row-layout group_4"></div>
+  </div>
+</div>

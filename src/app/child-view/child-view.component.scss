@@ -1,0 +1,126 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.navbar {
+  --igx-navbar-background: hsla(var(--ig-secondary-200));
+  height: max-content;
+  min-width: min-content;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.input {
+  height: max-content;
+  min-width: min-content;
+}
+.h5 {
+  color: hsla(var(--ig-gray-900));
+  height: max-content;
+  min-width: min-content;
+}
+.h5_1 {
+  height: max-content;
+  min-width: min-content;
+}
+.avatar {
+  --igx-avatar-background: hsla(var(--ig-secondary-200));
+}
+.h6 {
+  width: 125px;
+  height: max-content;
+  min-width: min-content;
+  max-width: 125px;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group_1 {
+  background-color: hsla(var(--ig-gray-100));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  padding: 16px;
+  width: 401px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 401px;
+  flex-shrink: 0;
+}
+.expansion-panel {
+  height: max-content;
+  min-width: 0;
+  min-height: 0;
+  flex-shrink: 0;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  max-width: 320px;
+}
+.group_3 {
+  background-color: hsla(var(--ig-gray-200));
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_4 {
+  background-color: hsla(var(--ig-gray-100));
+  border-color: hsla(var(--ig-surface-500));
+  border-style: solid;
+  border-radius: 15px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_5 {
+  background-color: hsla(var(--ig-gray-100));
+  border-radius: 15px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
